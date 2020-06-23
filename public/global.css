@@ -1,0 +1,49 @@
+/* 重置-浏览器默认 */
+body {
+  margin: 0;
+}
+
+/* 页面 */
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 滚动条
+::-webkit-scrollbar {
+  width : 1px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+border-radius   : 1px;
+background-color: rgba(5,240,244,1);
+}
+::-webkit-scrollbar-track {
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : rgba(216,216,216,1);
+  border-radius: 34px;
+}
+/**/
+
+/* 重置-antd */
+/* 由于设置为12px导致的问题，后续解决 */
+.ant-input {
+  line-height: 20px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.ant-input-affix-wrapper>input.ant-input {
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+/**/
+
+/* 登录弹窗 */
+.login-modal.ant-modal-confirm .ant-modal-confirm-btns {
+  display: none;
+}

@@ -1,0 +1,103 @@
+/* 全屏模式 */
+:global(.base-layout-fullscreen) {
+  .base-layout-menu {
+    display: none;
+  }
+}
+
+.base-layout-menu {
+  min-height: calc(100vh - 64px);
+
+  display: flex;
+  flex-direction: row;
+}
+
+/* 一级 */
+.base-layout-menu-parent {
+  min-width: 120px;
+  background-color: #17224B;
+  color: #fff;
+
+  :global {
+    .ant-menu {
+
+      &.ant-menu-inline {
+        & > .ant-menu-item {
+          height: 38px;
+          line-height: 38px;
+          padding-right: 12px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      &.ant-menu-dark {
+        background-color: transparent;
+
+        .ant-menu-item {
+          
+          .anticon {
+            font-size: 14px;
+          }
+
+          & > a {
+            color: #fff;
+          }
+        } 
+      }
+
+    } 
+  }
+}
+.base-layout-menu-parent-none {
+  display: none;
+}
+
+/* 二三级 */
+.base-layout-menu-children {
+  min-width: 128px;
+  background-color: #e5ebf1;
+
+  :global {
+    .ant-menu {
+      background-color: transparent;
+
+      &.ant-menu-inline {
+        & > .ant-menu-item {
+          height: 38px;
+          line-height: 38px;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-right: 12px;
+          padding-left: 12px !important;
+
+          a {
+            color: #000;
+          }
+        }
+
+        .ant-menu-submenu-title {
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-left: 12px !important;
+
+          .ant-menu-submenu-arrow {
+            right: 10px;
+          }
+        }
+      }
+
+      .ant-menu-item-selected {
+        background-color: #bcd9f3;
+
+        &::after {
+          display: none;
+        }
+      }
+
+    } 
+  }
+}
+.base-layout-menu-children-none {
+  display: none;
+}

@@ -1,0 +1,21 @@
+/* 全屏模式 */
+:global(.base-layout-fullscreen) {
+  .base-layout-content {
+    min-height: 100vh;
+  }  
+}
+
+.base-layout {
+  height: 100%;
+}
+.base-layout-content {
+  min-height: calc(100vh - 64px);
+
+  display: flex;
+  flex-direction: row;
+}
+.base-layout-children {
+  flex: 1;
+
+  background-color: #F0F3F7;
+}

@@ -1,0 +1,75 @@
+@import '~antd/es/style/themes/default.less';
+
+.view-layout {
+  margin: 24px 24px 0 24px;
+  background-color: #fff;
+}
+.view-layout-head {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 14px;
+  padding: 24px 16px;
+}
+.view-layout-head-back {
+  cursor: pointer;
+  color: #999;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+.view-layout-head-slash {
+  color: #999;
+  padding: 0 5px;
+}
+.view-layout-head-title {
+  color: #000;
+}
+.view-layout-body {
+
+}
+
+.view-layout-body-title {
+  padding: 16px;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.view-layout-group-notitle {
+  padding-top: 16px;
+}
+
+.view-layout-group-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 16px;
+  padding-top: 32px;
+  padding-bottom: 6px;
+  border-top: 1px solid #E8E8E8;
+  color: #000;
+}
+
+.view-layout-filed {
+  display: flex;
+  flex-direction: row;
+
+  padding: 0 16px 16px 16px;
+}
+.view-layout-filed-label {
+  padding: 6px 0;
+  line-height: 20px;
+
+  &:after {
+    content: ":";
+    position: relative;
+    top: -.5px;
+    margin: 0 8px 0 2px;
+  }
+}
+.view-layout-filed-value {
+  flex: 1;
+}

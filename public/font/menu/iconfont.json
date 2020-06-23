@@ -1,0 +1,16 @@
+{
+  "id": "1621551",
+  "name": "怡得社区-菜单",
+  "font_family": "menu",
+  "css_prefix_text": "menu",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4765881",
+      "name": "dashboard",
+      "font_class": "dashboard",
+      "unicode": "e78b",
+      "unicode_decimal": 59275
+    }
+  ]
+}

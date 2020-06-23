@@ -1,0 +1,83 @@
+/* 全屏模式 */
+:global(.base-layout-fullscreen) {
+  .base-layout-header {
+    display: none;
+  }
+}
+
+.base-layout-header {
+  min-height: 64px;
+  background-color: #000517;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* logo */
+.base-layout-header-logo {
+  height: 64px;
+}
+
+/* 分割线 */
+.base-layout-header-divider {
+  width: 1px;
+  height: 24px;
+  font-size: 0;
+  line-height: 0;
+  background-color: rgba(255,255,255,.2);
+}
+
+/* 导航 */
+.base-layout-header-nav {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0 16px;
+
+  :global {
+    .ant-menu {
+      font-size: 14px;
+      background-color: transparent;
+      color: #fff;
+    }
+    .ant-menu-horizontal {
+      border-bottom-color: transparent;
+      line-height: 62px;
+    }
+  }
+}
+
+/* 操作项 */
+.base-layout-header-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  cursor: pointer;
+
+  padding: 0 12px;
+
+  &:hover {
+    background-color: rgba(255,255,255,.1);
+  }
+}
+
+/* 公司 */
+.base-layout-header-company-name {
+  padding: 0 8px 0 0;
+  line-height: 64px;
+}
+
+/* 用户 */
+.base-layout-header-user-name {
+  padding: 0 12px 0 8px;
+  line-height: 64px;
+}
+.base-layout-header-user-avatar {
+  background-color: #000;
+}
